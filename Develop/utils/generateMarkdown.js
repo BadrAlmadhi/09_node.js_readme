@@ -18,38 +18,48 @@ function generateMarkdown(data) {
   // anything is the backtick `is a string`
   return `# ${data.title} 
 
-  ## Description
+## Description
 ${data.description}
 
-  - What was your motivation?
-  ${data.what} 
-  - Why did you build this project?
-   ${data.why} 
-  - What problem does it solve?
-  ${data.problem} 
-  - What did your learn?
-  ${data.learn} 
+- What was your motivation?
+<br>
+${data.what} 
+<br>
+- Why did you build this project?
+<br>
+${data.why} 
+<br>
+- What problem does it solve?
+<br>
+${data.problem} 
+<br>
+- What did your learn?
+<br>
+${data.learn} 
 
-  ## Table of Contents
+## Table of Contents
   * [Installation](#installation)
   * [Usage](#usage)
   * [License](#license)
+  * [Test](#test)
+  * [Contact](#contact)
 
-  ## [Installation](#table-of-contents)
-  ${data.installation} 
+## [Installation](#table-of-contents)
+${data.installation} 
 
-  ## [Usage](#table-of-contents)
-  ${data.usage}
+## [Usage](#table-of-contents)
+${data.usage}
   
-  ## [License](#table-of-contents)
-  ${data.license}
+## [License](#table-of-contents)
+${data.license}
   
- 
-  
-  ## [Tests](#table-of-contents)
-  ${data.test}
+## [Tests](#table-of-contents)
+${data.test}
 
-`;
-}
+## [Contact](#table-of-contents)
+${data.email}
+
+`
+};
 
 module.exports = generateMarkdown;

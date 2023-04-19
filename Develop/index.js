@@ -60,6 +60,11 @@ const questions = [
         message: 'How did you test your app?',
         default: 'npm test',
     },
+    {
+        type: 'input',
+        name: 'email',
+        message: 'What is your email?',
+    },
   
 ];
 
