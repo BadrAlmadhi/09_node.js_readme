@@ -1,29 +1,51 @@
 // TODO: Include packages needed for this application
 const inquirer = require('inquirer');
 const fs = require('fs');
-const generateMarkdown = require('generateMarkdown');
+const path = require('path');
+const generateMarkdown = require('./utils/generateMarkdown');
 // TODO: Create an array of questions for user input
 const questions = [
     {
         type: 'input',
-        name: 'github',
-        message: 'What is your GitHub username?',
+        name: 'title',
+        message: 'What is the title of your Project? (required)',
         //titleInput ? true : console.log(message)
     },
     {
         type: 'input',
+        name: 'githubUsername',
+        message: 'What is your GitHub username? (required)',
+    },
+    {
+        type: 'input',
         name: 'email',
-        message: 'What is your email?',
+        message: 'What is your email address? (required)',
     },
     {
         type: 'input',
-        name: 'title',
-        message: 'What is your GitHub username?',
+        name: 'what',
+        message: 'What is your project and what problem will it solve? (required)',
     },
     {
         type: 'input',
-        name: 'description',
-        message: 'Please write your project description',
+        name: 'why',
+        message: 'Why did you create this project? (required)',
+    },
+    {
+        type: 'input',
+        name: 'how',
+        message: 'How will someone use this?',
+    },
+    {
+        type: 'input',
+        name: 'installation',
+        message: 'Please explained the installation instructions for your project?',
+    },
+    {
+        // This not added in the generatemarkdown
+        type: 'input',
+        name: 'usage',
+        message: 'Please explain how to use your project?'
     },
     {
         type: 'list',
@@ -32,39 +54,41 @@ const questions = [
         choices: ['MIT', 'qpl-2.0', 'qpl-3.0', 'lqpl', 'lqpl-2.1', 'non'],
     },
     {
+        type: 'confirm',
+        name: 'confirmation',
+        message: 'Would your like to allow other developers to contribute?',
+        default: 'yes'
+    },
+    {
         type: 'input',
-        name: 'installation',
-        message: 'What did you for your installation?',
-        default: 'npm i',
+        name: 'contribute',
+        message: 'Please explain how would your like to contribute?',
     },
     {
         type: 'input',
         name: 'test',
-        message: 'What is your GitHub u',
+        message: 'How did you test your app?',
         default: 'npm test',
-    },
-    {
-        type: 'input',
-        name: 'usage',
-        message: 'What this project is used for?',
-    },
-    {
-        type: 'input',
-        name: 'contributing',
-        message: 'What user need to know about contributing?'
     }
+
     
     
 ];
 
+// fs allow me to do file changes such as generate, delete, add
+
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {
-
+// ask tutor about fs
+fs.writeFileSync(fileName, data)
+// (sync) make the parameter two instead of three.
 }
 
 // TODO: Create a function to initialize app
 function init() {
-    
+    inquirer.prompt(questions).then(data => {
+        writeToFile('README.md', generateMarkdown(data))
+    }) 
 }
 
 // Function call to initialize app
