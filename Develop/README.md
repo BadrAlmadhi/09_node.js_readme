@@ -1,30 +1,32 @@
-# Readme generator 
+# generate readme file //done (remove)
 
+  ## Description
+help people make readme file //done (remove)
 
-## Table-of-Contents
-  * [Description](#description)
+  - What was your motivation?
+  learn back end //done (remove)
+  - Why did you build this project?
+   new users make readme file //done (remove)
+  - What problem does it solve?
+  outline readme file //done (remove)
+  - What did your learn?
+  back end //done (remove)
+
+  ## Table of Contents
   * [Installation](#installation)
   * [Usage](#usage)
-  
-  * [Contributing](#contributing)
-  * [Tests](#tests)
-  * [Questions](#questions)
-  
-  ## [Description](#table-of-contents)
-  undefined
-  
+  * [License](#license)
+
   ## [Installation](#table-of-contents)
-  Simply ope explorer in VS code, go to index.js and right click to open terminal. Type node index.js answe questions and then readme file will be generated
+  step step step //done (remove)
+
   ## [Usage](#table-of-contents)
+  install then do that and then
   
+  ## [License](#table-of-contents)
+  MIT
   
-  For more information on how to add screenshots for examples, visit the following website:
-  
-  [Mark Down Tutorial](https://agea.github.io/tutorial.md/)
-  
-  
-  ## [Contributing](#table-of-contents)
-  
+ 
   
   ## [Tests](#table-of-contents)
   npm test

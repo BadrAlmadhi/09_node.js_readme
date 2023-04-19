@@ -13,39 +13,40 @@ const questions = [
     },
     {
         type: 'input',
-        name: 'githubUsername',
-        message: 'What is your GitHub username? (required)',
-    },
-    {
-        type: 'input',
-        name: 'email',
-        message: 'What is your email address? (required)',
+        name: 'description',
+        message: 'Describe the project  (required)',
     },
     {
         type: 'input',
         name: 'what',
-        message: 'What is your project and what problem will it solve? (required)',
+        message: 'What was your motivation?  (required)',
     },
     {
         type: 'input',
         name: 'why',
-        message: 'Why did you create this project? (required)',
+        message: 'Why did you build this project? (required)',
     },
     {
         type: 'input',
-        name: 'how',
-        message: 'How will someone use this?',
+        name: 'problem',
+        message: 'What problem does it solve? (required)',
+    },
+    {
+        type: 'input',
+        name: 'learn',
+        message: 'What did your learn? (required)',
     },
     {
         type: 'input',
         name: 'installation',
-        message: 'Please explained the installation instructions for your project?',
+        message: 'What are the steps required to install your project?',
     },
     {
         // This not added in the generatemarkdown
         type: 'input',
         name: 'usage',
         message: 'Please explain how to use your project?'
+        // provide screenshots
     },
     {
         type: 'list',
@@ -54,25 +55,12 @@ const questions = [
         choices: ['MIT', 'qpl-2.0', 'qpl-3.0', 'lqpl', 'lqpl-2.1', 'non'],
     },
     {
-        type: 'confirm',
-        name: 'confirmation',
-        message: 'Would your like to allow other developers to contribute?',
-        default: 'yes'
-    },
-    {
-        type: 'input',
-        name: 'contribute',
-        message: 'Please explain how would your like to contribute?',
-    },
-    {
         type: 'input',
         name: 'test',
         message: 'How did you test your app?',
         default: 'npm test',
-    }
-
-    
-    
+    },
+  
 ];
 
 // fs allow me to do file changes such as generate, delete, add

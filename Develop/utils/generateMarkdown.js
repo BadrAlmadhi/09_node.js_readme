@@ -16,34 +16,36 @@ function renderLicenseSection(license) {}
 // write a readme file template
 function generateMarkdown(data) {
   // anything is the backtick `is a string`
-  return `# ${data.title} 
-${renderLicenseBadge(data.license)}
+  return `# ${data.title} //done (remove)
 
-## Table-of-Contents
-  * [Description](#description)
+  ## Description
+${data.description} //done (remove)
+
+  - What was your motivation?
+  ${data.what} //done (remove)
+  - Why did you build this project?
+   ${data.why} //done (remove)
+  - What problem does it solve?
+  ${data.problem} //done (remove)
+  - What did your learn?
+  ${data.learn} //done (remove)
+
+  ## Table of Contents
   * [Installation](#installation)
   * [Usage](#usage)
-  ${renderLicenseBadge(data.license)}
-  * [Contributing](#contributing)
-  * [Tests](#tests)
-  * [Questions](#questions)
-  
-  ## [Description](#table-of-contents)
-  ${data.description}
-  
+  * [License](#license)
+
   ## [Installation](#table-of-contents)
-  ${data.installation}
+  ${data.installation} //done (remove)
+
   ## [Usage](#table-of-contents)
   ${data.usage}
   
-  For more information on how to add screenshots for examples, visit the following website:
+  ## [License](#table-of-contents)
+  ${data.license}
   
-  [Mark Down Tutorial](https://agea.github.io/tutorial.md/)
+ 
   
-  ${renderLicenseBadge(data.license)}
-  ## [Contributing](#table-of-contents)
-  
-  ${renderLicenseBadge(data.confirmContributers, data.contribute)}
   ## [Tests](#table-of-contents)
   ${data.test}
 
