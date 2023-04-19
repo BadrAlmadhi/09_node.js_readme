@@ -1,16 +1,16 @@
-# generate readme file //done (remove)
+# Create a readme file 
 
   ## Description
-help people make readme file //done (remove)
+This project help people create a readme file to display in thier github account
 
   - What was your motivation?
-  learn back end //done (remove)
+  My motivation is to make readme file format easy for people 
   - Why did you build this project?
-   new users make readme file //done (remove)
+   This project I made it to know about back end development and unserstand how node.js works 
   - What problem does it solve?
-  outline readme file //done (remove)
+  Many new users have a hard time understading readme file, this project help users understand the problem 
   - What did your learn?
-  back end //done (remove)
+  Node.js, packagelock, node_modules 
 
   ## Table of Contents
   * [Installation](#installation)
@@ -18,10 +18,10 @@ help people make readme file //done (remove)
   * [License](#license)
 
   ## [Installation](#table-of-contents)
-  step step step //done (remove)
+  Need to intall npm to run project 
 
   ## [Usage](#table-of-contents)
-  install then do that and then
+  Open vs code right click index.js to open file and snwer questions
   
   ## [License](#table-of-contents)
   MIT

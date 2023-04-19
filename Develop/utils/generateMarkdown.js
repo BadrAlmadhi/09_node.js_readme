@@ -16,19 +16,19 @@ function renderLicenseSection(license) {}
 // write a readme file template
 function generateMarkdown(data) {
   // anything is the backtick `is a string`
-  return `# ${data.title} //done (remove)
+  return `# ${data.title} 
 
   ## Description
-${data.description} //done (remove)
+${data.description}
 
   - What was your motivation?
-  ${data.what} //done (remove)
+  ${data.what} 
   - Why did you build this project?
-   ${data.why} //done (remove)
+   ${data.why} 
   - What problem does it solve?
-  ${data.problem} //done (remove)
+  ${data.problem} 
   - What did your learn?
-  ${data.learn} //done (remove)
+  ${data.learn} 
 
   ## Table of Contents
   * [Installation](#installation)
@@ -36,7 +36,7 @@ ${data.description} //done (remove)
   * [License](#license)
 
   ## [Installation](#table-of-contents)
-  ${data.installation} //done (remove)
+  ${data.installation} 
 
   ## [Usage](#table-of-contents)
   ${data.usage}
